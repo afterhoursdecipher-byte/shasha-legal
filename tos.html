@@ -1,0 +1,179 @@
+<title>Shasha Auto-Publish Terms</title>
+<meta name="description" content="Terms of Service for the Finance with Shasha internal TikTok auto-publishing tool.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF7F0;
+    --surface: #FFFFFF;
+    --text: #1A1F2B;
+    --text-dim: #5B6577;
+    --accent: #B8843A;
+    --accent-soft: #F1E4CC;
+    --border: #E5E0D3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B1220;
+      --surface: #131B2E;
+      --text: #E8ECF4;
+      --text-dim: #94A3B8;
+      --accent: #D4A24C;
+      --accent-soft: #26210F;
+      --border: #232D42;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B1220;
+    --surface: #131B2E;
+    --text: #E8ECF4;
+    --text-dim: #94A3B8;
+    --accent: #D4A24C;
+    --accent-soft: #26210F;
+    --border: #232D42;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.65;
+    padding: 0 24px 96px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  header {
+    padding: 56px 0 36px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 22px;
+  }
+  .mark::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 14px;
+  }
+  .sub { color: var(--text-dim); font-size: 16px; max-width: 46ch; }
+  .meta {
+    margin-top: 22px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  section { margin-bottom: 38px; }
+  h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 14px;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  p { margin: 0 0 14px; font-size: 16px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; font-size: 16px; }
+  li:last-child { margin-bottom: 0; }
+  strong { font-weight: 600; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 18px 20px;
+    font-size: 15px;
+    color: var(--text-dim);
+  }
+  .callout strong { color: var(--text); }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-dim);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover, a:focus-visible { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="mark">Finance with Shasha · 莎莎聊财经</div>
+    <h1>Terms of Service</h1>
+    <p class="sub">Covers the internal automation tool that publishes this channel's own videos to its own TikTok account.</p>
+    <div class="meta">Effective 2026-09-09 · Applies to app "莎莎聊财经自动发布"</div>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> What this is</h2>
+    <p>This tool is a first-party, internal automation script built and operated by the team behind <strong>Finance with Shasha (莎莎聊财经)</strong>. Its only function is to take videos this channel has already produced — narrated daily market-news and analysis — and publish them to the channel's own TikTok account, <strong>@financewithshasha</strong>, using TikTok's Content Posting API.</p>
+    <div class="callout">It is not a public product. Nobody outside the channel's own operator can use it, connect an account to it, or request that it publish on their behalf.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Who it acts for</h2>
+    <p>The tool authenticates as the channel operator and publishes only to accounts the operator has personally authorized through TikTok's own login flow. It never posts to, reads from, or acts on any account other than the one it was explicitly connected to.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Content responsibility</h2>
+    <p>Every video the tool publishes is produced by the channel itself before it ever reaches this tool. The channel operator is solely responsible for that content and for its compliance with TikTok's <a href="https://www.tiktok.com/legal/page/row/terms-of-service/en" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://www.tiktok.com/community-guidelines/en" target="_blank" rel="noopener">Community Guidelines</a>, including disclosure of AI-narrated or synthetic-voice content where applicable.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> No warranty</h2>
+    <p>This is an internal operations tool, provided as-is, with no uptime or accuracy guarantee. Publishing can fail, queue, or require manual follow-up in TikTok's own app — the tool does not promise a fully unattended pipeline, particularly while its API access remains under TikTok's review.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Changes</h2>
+    <p>These terms may be updated as the tool's scope changes. The date at the top of this page always reflects the current version.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Contact</h2>
+    <p>Questions about this tool or its use of the TikTok API can be sent to <a href="mailto:tictaclu@gmail.com">tictaclu@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>Finance with Shasha</span>
+    <a href="./privacy.html">Privacy Policy →</a>
+  </footer>
+</div>
